@@ -1,4 +1,13 @@
 # exchange_service.py
+"""
+(服务层 - 聚合)
+职责：这个类是原有 kz_bot4.py 中 ExchangeClient 的升级版。它作为 Facade (门面模式)，将交易和行情数据整合，并处理交易规则（精度、步长）的加载。
+
+
+来源参考： (原 ExchangeClient 逻辑)
+"""
+
+
 from datetime import datetime
 from loguru import logger
 from roostoo_client import RoostooClient
