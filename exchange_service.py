@@ -13,6 +13,7 @@ from loguru import logger
 from roostoo_client import RoostooClient
 from horus_client import HorusClient
 from config import Config
+from ai import ai_teach
 
 class ExchangeService:
     def __init__(self):
